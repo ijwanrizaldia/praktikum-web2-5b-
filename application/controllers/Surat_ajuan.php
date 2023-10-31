@@ -5,7 +5,7 @@ class Surat_ajuan extends CI_Controller {
  {
  parent::__construct();
  $this->load->model("Masuk_model");
- //cek_login(); 
+ cek_login(); 
  $this->load->library('form_validation');
  }
  public function index()
@@ -29,7 +29,7 @@ class Surat_ajuan extends CI_Controller {
  }
  public function save()
  {
- $this->Masuk_model->saveAjuan();
+ $this->Masuk_model->save();
  if($this->db->affected_rows()>0){
  $this->session->set_flashdata("success","Data Surat Masuk Berhasil DiSimpan");
  }

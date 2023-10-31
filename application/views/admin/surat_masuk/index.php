@@ -22,7 +22,7 @@
  <th>No.</th>
  <th>No Surat</th>
  <th>Perihal</th>
-<th>Keterangan</th>
+ <th>Keterangan</th>
  <th>Taggal Surat</th> 
  <th>Surat</th> 
  
