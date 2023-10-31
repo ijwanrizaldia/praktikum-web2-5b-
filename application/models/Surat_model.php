@@ -1,5 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
-class Masuk_model extends CI_Model
+class Surat_model extends CI_Model
 {
  protected $_table ='tb_surat_masuk'; 
  protected $primary = 'id';
