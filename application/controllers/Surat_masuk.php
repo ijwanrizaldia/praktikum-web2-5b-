@@ -9,7 +9,7 @@ class Surat_masuk extends CI_Controller {
  $this->load->library('form_validation');
  }
  public function index()
-{
+ {
  $data = array(
  'title' => 'View Data Surat',
  'surat' => $this->Masuk_model->getAll(),
@@ -29,7 +29,8 @@ class Surat_masuk extends CI_Controller {
  {
  $this->Masuk_model->Save();
  if($this->db->affected_rows()>0){
- $this->session->set_flashdata("success","Data Surat Masuk Berhasil DiSimpan");
+ $this->session-
+>set_flashdata("success","Data Surat Masuk Berhasil DiSimpan");
  }
  redirect('admin/surat_masuk');
  }
@@ -48,9 +49,10 @@ class Surat_masuk extends CI_Controller {
  {
  $this->Masuk_model->editData();
  if($this->db->affected_rows()>0){
- $this->session->set_flashdata("success","Data user Berhasil DiUpdate");
+ $this->session-
+>set_flashdata("success","Data user Berhasil DiUpdate");
  }
-redirect('admin/surat_masuk');
+ redirect('admin/surat_masuk');
  }
  function delete($id)
  {

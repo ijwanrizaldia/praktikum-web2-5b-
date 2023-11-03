@@ -47,8 +47,7 @@
 <div>
 <a href=".base_url('admin/surat_masuk/getedit/' . $suratdata->id)." class='btn btn-sm btn-info'><i class='fas fa-edit'></i> Edit</a>
  <a href=".base_url('admin/surat_masuk/delete/' . $suratdata->id)." class='btn btn-sm btn-danger'
- onclick='return confirm(\"Ingin mengapus data user in
-i?\");'><i class='fas fa-trash'></i> Hapus</a>
+ onclick='return confirm(\"Ingin mengapus data user ini?\");'><i class='fas fa-trash'></i> Hapus</a>
  </div>
  </td>
  </tr>";

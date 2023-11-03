@@ -20,7 +20,7 @@ class Masuk_model extends CI_Model
  'image'=>$this->uploadImage(),
  'is_active' => '1',
  ];
-$this->db->insert($this->_table,$data);
+ $this->db->insert($this->_table,$data);
  }
  public function uploadImage(){
  $config['upload_path'] = './assets/photo/surat_masuk/';
@@ -63,7 +63,7 @@ $this->db->insert($this->_table,$data);
  'image' => $updateimage,
  'is_active' => '1',
  ];
-return $this->db->set($data)->where($this->primary,$id)->update($this->_table);
+ return $this->db->set($data)->where($this->primary,$id)->update($this->_table);
  // if($this->db->affected_rows()>0){
  // $this->session->set_flashdata("success","Data user Berhasil DiUpdate");
  // }
@@ -81,7 +81,8 @@ return $this->db->set($data)->where($this->primary,$id)->update($this->_table);
  $surat = $this->getById($id);
  if ($surat->image != "no_image.jpg") {
  $filename = explode(".", $surat->image)[0];
- return array_map('unlink', glob(FCPATH."assets/photo/surat_masuk/$filename.*"));
+ return array_map('unlink', glob(FCPATH."assets/photo/surat_masuk/$filenam
+e.*"));
  }
 }
 }
