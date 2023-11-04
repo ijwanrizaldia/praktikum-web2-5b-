@@ -41,7 +41,7 @@ class Surat_ajuan extends CI_Controller {
  $data = array(
  'title' => 'Update Data Surat Masuk',
  'userlog'=> infoLogin(),
- 'surat' => $this->Masuk_model->getById($id),
+ 'surat' => $this->Surat_model->getById($id),
  'content'=> 'surat_ajuan/edit_form'
  );
  $this->load->view('admin/template/main',$data);
@@ -49,7 +49,7 @@ class Surat_ajuan extends CI_Controller {
  
  public function edit()
  {
- $this->Masuk_model->editData();
+ $this->Surat_model->editData();
  if($this->db->affected_rows()>0){
  $this->session->set_flashdata("success","Data user Berhasil DiUpdate");
  }
@@ -57,7 +57,7 @@ class Surat_ajuan extends CI_Controller {
  }
  function delete($id)
  {
- $this->Masuk_model->delete($id);
+ $this->Surat_model->delete($id);
  redirect('surat_ajuan');
  }
 }

@@ -7,7 +7,7 @@
     </ol>
     <div class="card mb-4">
       <div class="card-body">
-        <form action="<?php echo site_url('surat_ajuan/save') ?>" method="post" enctype="multipart/form-data">
+        <form action="<?php echo site_url('admin/surat_ajuan/save') ?>" method="post" enctype="multipart/form-data">
           <div class="mb-3">
             <label for="no_surat">NO SURAT <code>*</code></label>
             <input class="form-control" type="text" name="no_surat" placeholder="NO SURAT MASUK PENGAJUAN" required />
