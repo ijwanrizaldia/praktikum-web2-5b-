@@ -29,8 +29,7 @@ class Surat_masuk extends CI_Controller {
  {
  $this->Masuk_model->Save();
  if($this->db->affected_rows()>0){
- $this->session-
->set_flashdata("success","Data Surat Masuk Berhasil DiSimpan");
+ $this->session->set_flashdata("success","Data Surat Masuk Berhasil DiSimpan");
  }
  redirect('admin/surat_masuk');
  }
@@ -49,8 +48,7 @@ class Surat_masuk extends CI_Controller {
  {
  $this->Masuk_model->editData();
  if($this->db->affected_rows()>0){
- $this->session-
->set_flashdata("success","Data user Berhasil DiUpdate");
+ $this->session->set_flashdata("success","Data user Berhasil DiUpdate");
  }
  redirect('admin/surat_masuk');
  }
